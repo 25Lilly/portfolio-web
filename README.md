@@ -1,3 +1,4 @@
+# Portfolio
 Portfolio showcasing my projects, interests, and accomplishments
 
 # Getting Started with Create React App
