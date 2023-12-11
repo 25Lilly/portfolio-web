@@ -45,17 +45,17 @@ function Navbar() {
                     </Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/Contact" className="nav-links" onClick={closeMobileMenu}>
-                        Contact
+                    <Link to="/Games" className="nav-links" onClick={closeMobileMenu}>
+                        Games
                     </Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/Games" className="nav-links-mobile" onClick={closeMobileMenu}>
-                        Games! 
+                    <Link to="/Projects" className="nav-links-mobile" onClick={closeMobileMenu}>
+                        See Projects! 
                     </Link>
                 </li>
             </ul>
-            {button && <Button buttonStyle='btn--outline'>Games!</Button>} 
+            {button && <Button buttonStyle='btn--outline'>See Projects!</Button>} 
         </div>
     </nav>
     </>
