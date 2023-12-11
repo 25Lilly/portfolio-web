@@ -7,13 +7,13 @@ video {
   }
   
   .first-container {
-    /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
+    background: url('/public/images/profile_wide.jpg') center center/cover no-repeat;
     height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start; 
+    align-items: flex-end;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
     object-fit: contain;
   }
@@ -21,11 +21,14 @@ video {
   .first-container > h1 {
     color: #fff;
     font-size: 100px;
-    margin-top: -100px;
+    /* make sure there is top margin to prevent overlap */
+    margin-top: 2rem;
+    margin-right: 32px;
   }
   
   .first-container > p {
     margin-top: 8px;
+    margin-right: 32px;
     color: #fff;
     font-size: 32px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
@@ -33,15 +36,23 @@ video {
   }
   
   .first-btns {
-    margin-top: 32px;
+    margin-top: 175px;
+    margin-right: 100px;
+    margin-bottom: 32px;
   }
   
   .first-btns .btn {
     margin: 6px;
+    padding: 12px 32px;
+    font-size: 40px;
   }
-  
-  .fa-play-circle {
-    margin-left: 4px;
+
+  .first-btns .btn:hover {
+    /* transparent bacground */
+    background-color: #0b35a7;
+    color: #fff;
+    font-size: 50px;
+    transition: all 0.3s ease-out;
   }
   
   @media screen and (max-width: 960px) {
@@ -54,7 +65,7 @@ video {
   @media screen and (max-width: 768px) {
     .first-container > h1 {
       font-size: 50px;
-      margin-top: -100px;
+      margin-top: 100px;
     }
   
     .first-container > p {
@@ -64,6 +75,25 @@ video {
     .btn-mobile {
       display: block;
       text-decoration: none;
+    }
+
+    .first-btns {
+      margin-top: 30px;
+      margin-right: 32px;
+    }
+
+    .first-btns .btn {
+      margin: 6px;
+      padding: 12px 32px;
+      font-size: 20px;
+    }
+
+    .first-btns .btn:hover {
+      /* transparent bacground */
+      background-color: #0b35a7;
+      color: #fff;
+      font-size: 25px;
+      transition: all 0.3s ease-out;
     }
   
     .btn {

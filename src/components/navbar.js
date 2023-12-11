@@ -1,4 +1,3 @@
-import { click } from '@testing-library/user-event/dist/click'
 import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
@@ -28,7 +27,7 @@ function Navbar() {
     <nav className="navbar">
         <div className="navbar-container">
             <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-                LHC <img src="sandwich.png" alt="sand" width="22" height="17"></img>
+                <img src="Flower.png" alt="LHC" width="40" height="40"></img>
             </Link>
             <div className="menu-icon" onClick={handleClick}>
                 <i className={click ? 'fas fa-times' : 'fas fa-bars'} /> 
