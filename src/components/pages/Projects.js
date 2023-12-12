@@ -1,12 +1,13 @@
 import React from 'react';
 import '../../App.css';
 import Navbar from '../Navbar';
+import Cards from '../Cards';
 
 function Projects() {
   return (
     <>
     <Navbar />
-    <h1 className='projects'>PROJECTS</h1>
+    <Cards />
     </>
   );
 }
