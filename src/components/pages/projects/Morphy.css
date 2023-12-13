@@ -1,18 +1,323 @@
-.project {
-    padding: 4rem;
-    background: #fff;
-  }
-  
-  h1 {
-    text-align: center;
+.project__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.project__line__image .left__line {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 10px;
+  margin-left: -95%;
+  position: absolute;
+}
+
+.project__line__image .left__line > img {
+  width: 100%;
+  height: 100%;
+  rotate: 90deg;
+  object-fit: contain;
+}
+
+.project__container .title__text {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    width: 100%;
+    height: auto; 
+    background: white
+}
+
+.project__container .title__text > h1 {
+    text-align: flex-start;
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-right: 50%;
+    font-size: 90px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(45deg, blue, purple, darkgreen, orange, white, white, white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+  .project__container .title__text > p {
+    text-align: flex-start;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 35px;
+    color: darkblue;
   }
 
-  .project__title__image {
-    width: 70%;
-    height: 70%;
-    margin: 0 auto;
-    display: block;
+  .project__container .title__image{
+    justify-self: flex-end;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: -20%;
+    margin-left: 30%;
+    max-width: 75%;
+    overflow: hidden;
   }
-  
+
+  .project__container .title__image > img{
+    max-width:5000px;
+    max-height:500px;
+    height: auto;
+  }
+
+  .project__subheading > h3{
+    text-align: left;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 15%; 
+    margin-right: 5%;
+  }
+
+ .project__description {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: auto;
+}
+
+.project__description .headding__text::before {
+  content: "";
+  display: block;
+  width: span;
+  height: 10px;
+  background-color: blueviolet;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+  .project__description .headding__text > h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkblue;
+}
+
+.project__description .instructions {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  margin-left: 10%;
+}
+
+.project__description .instructions .instructions__images{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin-top: -250px;
+}
+
+.instructions__images .instructions__image__left {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  justify-items: flex-end;
+  align-items: center;
+  font-size: 30px;
+  color: blue;
+}
+
+.instructions__images .instructions__image__left > img {
+  max-width:300px;
+  max-height:200px;
+  height: auto;
+  margin-right: -50px;
+}
+
+.instructions__images .instructions__image__left .instructions__image__left__top {
+  margin-right: -150px; 
+}
+
+.instructions__images .instructions__image__left .instructions__image__left__top > img {
+  max-width:300px;
+  max-height:300px;
+  height: auto;
+}
+
+.instructions__images .instructions__image__right {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  justify-items: flex-start;
+  align-items: center;
+  font-size: 30px;
+  color: blue;
+}
+
+.instructions__images .instructions__image__right > img {
+  max-width:300px;
+  max-height:200px;
+  height: auto;
+  margin-left: -50px;
+}
+
+.instructions__images .line__text {
+  margin-right: -150px;
+  margin-top: -70px;
+}
+
+.project__description .remote__image {
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.project__description .remote__image > img {
+  max-width:5000px;
+  max-height:500px;
+}
+
+.project__description .remote__text {
+  overflow: hidden;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.project__description .remote__text > p {
+  text-align: center;
+  font-size: 40px;
+  color: rgb(0, 0, 50);
+  margin-bottom: 10px;
+}
+
+.project__description .division__line {
+  margin-top: -120px;
+  margin-bottom: -120px;
+  width: 100%;
+}
+
+.project__description .division__line > img {
+  max-width:100%;
+  max-height:100%;
+  height: auto;
+  rotate: 180deg;
+}
+
+.project__description .upload__text > p {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 10px;
+  font-size: 40px;
+  color: rgb(0, 0, 50);
+}
+
+.instructions .upload__image {
+  width: 90%;
+  height: auto;
+  justify-content: center;
+  align-content: center;
+  margin-left: 7%;
+  margin-bottom: 100px;
+}
+
+.instructions .upload__image > img {
+  max-width: 100%;
+  height: auto;
+}
+
+.project__description .tech__details .headding__text {
+  text-align: center;
+  margin-left: -7%;
+  color: darkblue;
+}
+
+.project__description .tech__details .subheading__text> h2 {
+  align-items: flex-start;
+  font-size: 55px;
+  color: darkblue;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-indent: 7%;
+}
+
+.project__description .tech__details .flow__diagram{
+  text-align: center;
+}
+
+.project__description .tech__details .flow__diagram > img{
+  max-width: 70%
+}
+
+@media screen and (max-width: 960px) {
+  .project__container .title__text {
+    margin-top: -40px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    width: 100%;
+    height: auto; 
+    background: white
+  }
+
+  .project__container .title__text > h1 {
+    text-align: flex-start;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(45deg, blue, purple, darkgreen, orange, orange);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
+  .project__container .title__text > p {
+    text-align: flex-start;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 35px;
+    color: darkblue;
+  }
+  .project__container .title__image{
+    justify-self: flex-end;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: -100px;
+    margin-left: 34%;
+    max-width: 76%;
+    overflow: hidden;
+  }
+
+  .project__container .title__image > img{
+    content: url('/public/images/projectImages/morphySnake.png');
+    max-width:500px;
+    max-height:500px;
+    height: auto;
+  }
+  .project__container .project__description .headding__text > h1 {
+    font-size: 60px;
+  }
+  .project__description .instructions .instructions__images{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    margin-top: -850px;
+  }
+  .instructions__images .instructions__image__right {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: flex-start;
+    align-items: center;
+    font-size: 30px;
+    color: darkblue;
+  }
+  .project__description .remote__image > img {
+    content: url('/public/images/projectImages/morphyRemote.png');
+    max-width:5000px;
+    max-height:500px;
+    height: auto;
+    rotate: 90deg;
+  }
+}

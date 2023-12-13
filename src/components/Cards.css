@@ -3,7 +3,7 @@
   background: #fff;
 }
 
-h1 {
+.cards > h1 {
   text-align: center;
   margin-top: -40px;
   margin-bottom: -20px;
@@ -105,8 +105,9 @@ h1 {
 }
 
 .cards__item__text {
+  text-align: center;
   color: #252e48;
-  font-size: 18px;
+  font-size: 30px;
   line-height: 24px;
 }
 
