@@ -7,14 +7,14 @@ function SeeFirst() {
   return (
     <div className='first-container'>
       {/* <video src='/videos/video-1.mp4' autoPlay loop muted /> */}
-      <h1>Hi! I'm Lilly Chiavetta</h1>
-      <p></p>
+      <h1>Lilly Chiavetta</h1>
+      <p>engineer</p>
       <div className='first-btns'>
         <Button
           className='btns'
           buttonStyle='btn--primary'
         >
-          SEE MY PROJECTS
+          SEE PROJECTS
         </Button>
       </div>
     </div>

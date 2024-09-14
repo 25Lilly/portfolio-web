@@ -63,25 +63,27 @@
   position: absolute;
   bottom: 0;
   margin-left: 0;
+  margin-right: 0;
   font-size: 24px;
   font-weight: 700;
   color: #fff;
   background-color: rgba(0, 83, 155, 0.7);
-  width: 100%;
+  width: auto; 
   transition: ease-in-out 0.2s;
 }
 
 .cards__item__link:hover .cards__item__popup::after {
-  content: 'Read more';
+  content: attr(data-category);
   position: absolute;
   bottom: 0;
-  margin-left: 0;
-  padding: 8px 8px 8px;
+  margin-left: 0px; 
+  margin-right: 0px;
+  padding: 8px 8px;
   font-size: 24px;
   font-weight: 700;
   color: #fff;
   background-color: rgba(0, 83, 155, 0.7);
-  width: 100%;
+  width: auto; 
   transition: ease-in-out 0.2s;
 }
 
@@ -111,7 +113,7 @@
   line-height: 24px;
 }
 
-.cards__item__link:hover .cards__item__img {
+.cards__item__link:hover .cards__item__img{
   transform: scale(1.1);
 }
 

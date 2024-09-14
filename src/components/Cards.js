@@ -16,10 +16,10 @@ function Cards() {
               path='/Projects/Morphy'
             />
             <CardItem
-              src='/images/projectImages/ECG_design.png'
-              text='Portable EKG'
-              label = 'Detecting electrical activity of the heart to visualize and measure heart rate'
-              path='/Projects/EKG'
+              src='/images/projectImages/BPMCover.jpeg'
+              text='Automatic Blood Pressure Cuff'
+              label = 'Measuring blood pressure using korotkoff sounds and a pressure cuff'
+              path='/Projects/BPM'
             />
           </ul>
           <ul className='cards__items'>
@@ -27,27 +27,27 @@ function Cards() {
               src='/images/projectImages/PatientWatch.png'
               text='Patient Watch' 
               label = 'A Nurse&apos;s aid, keeping track of patient vitals and notifying nurses of patient status'
-              path='/Projects/PPG'
+              path='/Projects/ComingSoon'
             />
             <CardItem
               src='/images/projectImages/fluidWarmerCover.png'
               text='IV Fluid Warmer'
-              label = 'A low-cost device to warm IV fluids to body temperature to prevent hypothermia in patients'
-              path='/Projects/BPM'
+              label = 'A low-cost device to warm IV fluids to body temperature to prevent hypothermia in surgical patients'
+              path='/Projects/ComingSoon'
             />
           </ul>
           <ul className='cards__items'>
             <CardItem
-              src='/images/projectImages/BPMCover.jpeg'
-              text='Blood Pressure Monitor'
-              label = 'A robotic arm that can be controlled by a user&apos;s hand movements'
+              src='/images/projectImages/spotTheSpotCover.jpg'
+              text='Parking Spot Monitor'
+              label = 'A device to remotely monitor parking spots and notify users of available spots'
               path='/Projects/ComingSoon'
             />
             <CardItem
-              src='/images/projectImages/spotTheSpotCover.jpg'
-              text='Remotely Watching Parking Spots'
-              label = 'A robotic arm that can be controlled by a user&apos;s hand movements'
-              path='/Projects/ComingSoon'
+              src='/images/projectImages/ECG_design.png'
+              text='Portable EKG'
+              label = 'Detecting electrical activity of the heart to visualize and measure heart rate'
+              path='/Projects/EKG'
             />
           </ul>
         </div>
