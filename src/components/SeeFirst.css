@@ -15,10 +15,9 @@ video {
     align-items: flex-end;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
     object-fit: contain;
-    /* create a fade that fades for 10% of the screen from opaque to black on the right 30% of the container */
     background: linear-gradient(to right, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 1) 75%),
     url('/public/images/profile_wide.jpg') center center/cover no-repeat;
-    transition: background 0.5s ease; 
+    transition: all 1s ease; 
   }
   
   .first-container > h1 {
