@@ -7,7 +7,6 @@ video {
   }
   
   .first-container {
-    background: url('/public/images/profile_wide.jpg') center center/cover no-repeat;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -16,6 +15,10 @@ video {
     align-items: flex-end;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
     object-fit: contain;
+    /* create a fade that fades for 10% of the screen from opaque to black on the right 30% of the container */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 1) 75%),
+    url('/public/images/profile_wide.jpg') center center/cover no-repeat;
+    transition: background 0.5s ease; 
   }
   
   .first-container > h1 {
@@ -47,10 +50,9 @@ video {
   }
 
   .first-btns .btn:hover {
-    /* transparent bacground */
     background-color: #0b35a7;
     color: #fff;
-    font-size: 50px;
+    transform: scale(1.2);
     transition: all 0.3s ease-out;
   }
   
