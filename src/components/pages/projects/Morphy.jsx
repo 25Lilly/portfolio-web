@@ -10,7 +10,7 @@ function Morphy() {
       <div className='project__container'>
         <div className= 'project__line__image'>
           <div className='left__line'>
-            <img src='\images\projectImages\morphyLine.png' alt = 'Line'/>
+            <img src={`${process.env.PUBLIC_URL}/images/projectImages/morphyLine.png`} alt = 'Line'/>
           </div>
         </div>
         <div className='title__text'>
@@ -18,7 +18,7 @@ function Morphy() {
           <p> The Shapeshifting Toy </p>
         </div>
         <div className='title__image'>
-          <img src='\images\projectImages\morphySnakeAndBird.png' alt = 'Morphy'/>
+          <img src={`${process.env.PUBLIC_URL}/images/projectImages/morphySnakeAndBird.png`} alt = 'Morphy'/>
         </div>
         <div className= 'project__subheading'>
         <h3> For endless and engaging fun, Morphy is a toy for all ages to express their creativity!  
@@ -39,25 +39,25 @@ function Morphy() {
               <div className='instructions__image__left'>
               <h2 class='line__text'> Line </h2>
                 <div className='instructions__image__left__top'>
-                  <img src='\images\projectImages\morphyLine.png' alt = 'Instructions' class='rotate30'/>
+                  <img src={`${process.env.PUBLIC_URL}/images/projectImages/morphyLine.png`} alt = 'Instructions' class='rotate30'/>
                 </div>
                 <h2> Square </h2>
-                <img src='\images\projectImages\morphySquare.png' alt = 'Instructions'/>
+                <img src={`${process.env.PUBLIC_URL}/images/projectImages/morphySquare.png`} alt = 'Instructions'/>
               </div>
               <div className='remote__image'>
-                <img src='\images\projectImages\morphyArrows.png' alt = 'Instructions'/>
+                <img src={`${process.env.PUBLIC_URL}/images/projectImages/morphyArrows.png`} alt = 'Instructions'/>
               </div>
               <div className='instructions__image__right'>
-                <img src='\images\projectImages\morphySnake.png' alt = 'Instructions'/>
+                <img src={`${process.env.PUBLIC_URL}/images/projectImages/morphySnake.png`} alt = 'Instructions'/>
                 <h2> Cobra </h2>
-                <img src='\images\projectImages\morphyBird.png' alt = 'Instructions'/>
+                <img src={`${process.env.PUBLIC_URL}/images/projectImages/morphyBird.png`} alt = 'Instructions'/>
                 <h2> Bird </h2>
-                <img src='\images\projectImages\morphyGiraffe.png' alt = 'Instructions' class='rotate30'/>
+                <img src={`${process.env.PUBLIC_URL}/images/projectImages/morphyGiraffe.png`} alt = 'Instructions' class='rotate30'/>
                 <h2> Giraffe </h2>
               </div>
             </div>
             {/* <div className= 'division__line'>
-              <img src='\images\projectImages\morphyLine.png' alt = 'Line'/>
+              <img src='/images/projectImages/morphyLine.png' alt = 'Line'/>
             </div> */}
 
             <div className='upload'>
@@ -65,7 +65,7 @@ function Morphy() {
                 <p> Upload new shapes each month!</p>
               </div>
               <div className='upload__image'>
-                <img src='\images\projectImages\morphyUploadOverview.png' alt = 'Upload'/>
+                <img src={`${process.env.PUBLIC_URL}/images/projectImages/morphyUploadOverview.png`} alt = 'Upload'/>
               </div>
             </div>
           </div>
@@ -83,14 +83,14 @@ function Morphy() {
                   <img
                     className='section__img'
                     alt='Mech'
-                    src='\images\projectImages\morphyMech.png'
+                    src='/images/projectImages/morphyMech.png'
                   />
                   <p>Mechanical Hardware</p>
                 </li>
                 <li> Electrical Hardware </li>
                 <li> Software </li>
                 <figure className='section__image'>
-                  <img src='\images\projectImages\morphyOverview.png' alt = 'Overview'/>
+                  <img src='/images/projectImages/morphyOverview.png' alt = 'Overview'/>
                 </figure>
               </ul>
             </div> */}
@@ -100,7 +100,7 @@ function Morphy() {
                 <h2> Hardware </h2>
               </div>
               <div className='flow__diagram'>
-                <img src='\images\projectImages\morphyHWFlow.png' alt = 'HW'/>
+                <img src='/images/projectImages/morphyHWFlow.png' alt = 'HW'/>
               </div>
               <div className='hardware__text'>
                 <h3></h3>
@@ -112,7 +112,7 @@ function Morphy() {
                 <h2> Software </h2>
               </div>
               <div className='flow__diagram'>
-                <img src='\images\projectImages\morphySWFlow.png' alt = 'SW'/>
+                <img src='/images/projectImages/morphySWFlow.png' alt = 'SW'/>
               </div>
               <div className='software__text'>
                 <h3></h3>

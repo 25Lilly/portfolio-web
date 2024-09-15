@@ -13,7 +13,7 @@ function About() {
           {/* no title rn :( */}
         </h1>
         <div class="profile-container">
-          <img src='\images\profile.png' alt='Profile' class="profile-image" />
+          <img src= {`${process.env.PUBLIC_URL}/images/profile.png`} alt='Profile' class="profile-image" />
           <div class="profile-text">
             <p>Hello!</p>
             <p>My name is Lilly Chiavetta, an engineer with a passion for building elegant solutions to complex problems.</p>

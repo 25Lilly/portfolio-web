@@ -9,7 +9,7 @@ function ComingSoon() {
     <>
     <Navbar />
     <div className='coming-container'>
-      <video src='/videos/video-1.mp4' autoPlay loop muted />
+      <video src={`${process.env.PUBLIC_URL}/videos/video-1.mp4`} autoPlay loop muted />
       <h1>Coming Soon...</h1>
       <p>This page is still in development. Check out some of my other projects! </p>
       <div className='coming-btns'>

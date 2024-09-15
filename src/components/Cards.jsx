@@ -10,13 +10,13 @@ function Cards() {
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
-              src='/images/projectImages/morphyCover.png'
+              src={`${process.env.PUBLIC_URL}/images/projectImages/morphyCover.png`}
               text='Automatic Shapeshifter'
               label = 'An autotransformable toy that changes shape at the push of a button'
               path='/Projects/Morphy'
             />
             <CardItem
-              src='/images/projectImages/BPM/BPMCover.jpeg'
+              src= {`${process.env.PUBLIC_URL}/images/projectImages/BPM/BPMCover.jpeg`}
               text='Automatic Blood Pressure Cuff'
               label = 'Measuring blood pressure using korotkoff sounds and a pressure cuff'
               path='/Projects/BPM'
@@ -24,13 +24,13 @@ function Cards() {
           </ul>
           <ul className='cards__items'>
             <CardItem
-              src='/images/projectImages/PatientWatch.png'
+              src= {`${process.env.PUBLIC_URL}/images/projectImages/PatientWatch.png`}
               text='Patient Watch' 
               label = 'A Nurse&apos;s aid, keeping track of patient vitals and notifying nurses of patient status'
               path='/Projects/ComingSoon'
             />
             <CardItem
-              src='/images/projectImages/fluidWarmerCover.png'
+              src={`${process.env.PUBLIC_URL}/images/projectImages/fluidWarmerCover.png`}
               text='IV Fluid Warmer'
               label = 'A low-cost device to warm IV fluids to body temperature to prevent hypothermia in surgical patients'
               path='/Projects/ComingSoon'
@@ -38,13 +38,13 @@ function Cards() {
           </ul>
           <ul className='cards__items'>
             <CardItem
-              src='/images/projectImages/spotTheSpotCover.jpg'
+              src={`${process.env.PUBLIC_URL}/images/projectImages/spotTheSpotCover.jpg`}
               text='Parking Spot Monitor'
               label = 'A device to remotely monitor parking spots and notify users of available spots'
               path='/Projects/ComingSoon'
             />
             <CardItem
-              src='/images/projectImages/ECG_design.png'
+              src={`${process.env.PUBLIC_URL}/images/projectImages/ECG_design.png`}
               text='Portable EKG'
               label = 'Detecting electrical activity of the heart to visualize and measure heart rate'
               path='/Projects/EKG'

@@ -31,7 +31,7 @@ function Navbar() {
                 closeMobileMenu(); 
                 window.scrollTo({top: 0, behavior: 'smooth'}); 
                 }}>
-                <img src="/images/flowerIcon.png" alt="L" width="40" height="40"></img>
+                <img src={`${process.env.PUBLIC_URL}/images/flowerIcon.png`} alt="L" width="40" height="40"></img>
             </Link>
             <div className="menu-icon" onClick={handleClick}>
                 <i className={click ? 'fas fa-times' : 'fas fa-bars'} /> 
