@@ -17,6 +17,7 @@ function ComingSoon() {
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
+          buttonLink='/projects'
         >
           View More Projects
         </Button>

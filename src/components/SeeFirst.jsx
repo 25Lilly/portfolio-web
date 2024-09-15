@@ -41,6 +41,7 @@ function SeeFirst() {
         <Button
           className='btns'
           buttonStyle='btn--primary'
+          onClick={() => window.scrollTo({top: document.getElementById('myProjects').offsetTop, behavior: 'smooth'})}
         >
           SEE PROJECTS
         </Button>

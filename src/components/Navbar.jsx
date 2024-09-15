@@ -8,7 +8,7 @@ function Navbar() {
     const [button, setButton] = useState(true)
     
     const handleClick = () => setClick(!click)
-    const closeMobileMenu = () => setClick(false)
+    const closeMobileMenu = () => setClick(false);
 
     const showButton = () => {
         if (window.innerWidth <=960) {
@@ -23,13 +23,14 @@ function Navbar() {
         showButton() 
     }, [])
 
-  
-
   return (
     <>
     <nav className="navbar">
         <div className="navbar-container">
-            <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+            <Link to="/" className="navbar-logo" onClick={() => { 
+                closeMobileMenu(); 
+                window.scrollTo({top: 0, behavior: 'smooth'}); 
+                }}>
                 <img src="/images/flowerIcon.png" alt="L" width="40" height="40"></img>
             </Link>
             <div className="menu-icon" onClick={handleClick}>
@@ -57,7 +58,7 @@ function Navbar() {
                     </Link>
                 </li>
             </ul>
-            {button && <Button buttonStyle='btn--outline'>See Projects!</Button>} 
+            {button && <Button buttonStyle='btn--outline' buttonLink='/Projects' onClick={closeMobileMenu}>See Projects!</Button>} 
         </div>
     </nav>
     </>

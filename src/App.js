@@ -8,11 +8,24 @@ import Morphy from './components/pages/projects/Morphy';
 import ComingSoon from './components/pages/projects/ComingSoon';
 import ProjectPage from './components/pages/projects/ProjectPage';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
 
 function App() {
   return (
     <>
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/Games' element={<ComingSoon/>} />
