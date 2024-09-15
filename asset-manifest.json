@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.ce29aaa6.css",
-    "main.js": "/static/js/main.e92aebb5.js",
-    "static/media/robotPool.jpeg": "/static/media/robotPool.f293c4704710cc3fe01b.jpeg",
-    "static/media/ArobotThumbsUp.jpeg": "/static/media/ArobotThumbsUp.e10b93121846ea229a1e.jpeg",
-    "static/media/morphySnake.png": "/static/media/morphySnake.90266d9e738cca555a9f.png",
-    "static/media/morphyRemote.png": "/static/media/morphyRemote.5928f052d9f5791666b1.png",
-    "static/media/robotTableTest.jpeg": "/static/media/robotTableTest.5d6c259d29e7b0026377.jpeg",
-    "index.html": "/index.html",
-    "main.ce29aaa6.css.map": "/static/css/main.ce29aaa6.css.map",
-    "main.e92aebb5.js.map": "/static/js/main.e92aebb5.js.map"
+    "main.css": "/portfolio-web/static/css/main.f10e01e3.css",
+    "main.js": "/portfolio-web/static/js/main.9f9796ea.js",
+    "static/media/robotPool.jpeg": "/portfolio-web/static/media/robotPool.f293c4704710cc3fe01b.jpeg",
+    "static/media/ArobotThumbsUp.jpeg": "/portfolio-web/static/media/ArobotThumbsUp.e10b93121846ea229a1e.jpeg",
+    "static/media/morphySnake.png": "/portfolio-web/static/media/morphySnake.90266d9e738cca555a9f.png",
+    "static/media/morphyRemote.png": "/portfolio-web/static/media/morphyRemote.5928f052d9f5791666b1.png",
+    "static/media/robotTableTest.jpeg": "/portfolio-web/static/media/robotTableTest.5d6c259d29e7b0026377.jpeg",
+    "index.html": "/portfolio-web/index.html",
+    "main.f10e01e3.css.map": "/portfolio-web/static/css/main.f10e01e3.css.map",
+    "main.9f9796ea.js.map": "/portfolio-web/static/js/main.9f9796ea.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce29aaa6.css",
-    "static/js/main.e92aebb5.js"
+    "static/css/main.f10e01e3.css",
+    "static/js/main.9f9796ea.js"
   ]
 }
