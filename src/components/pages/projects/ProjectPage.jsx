@@ -1,5 +1,4 @@
 import React from 'react';
-import './ProjectPage.css';
 import ProjectOutline from './ProjectOutline';
 
 function ProjectPage() {

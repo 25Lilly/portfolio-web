@@ -7,7 +7,7 @@ function AboutMeElements() {
     skills: <p>I like stuff</p>,
     resume:
             <div class="object-container">
-                <object data="\documents\resume.pdf" type="application/pdf" width="100%" height="100%">
+                <object data={`${process.env.PUBLIC_URL}/documents/resume.pdf`} type="application/pdf" width="100%" height="100%">
                     <p>It appears you don't have a PDF plugin for this browser. You can <a href="\files\resume.pdf">click here to download the PDF file.</a></p>
                 </object>
             </div>,
@@ -16,14 +16,14 @@ function AboutMeElements() {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '10px', justifyContent: 'center' }}>
-        <div style={{ width: '90%', marginBottom: '20px', display: 'flex', justifyContent: 'space-between'}}>
-            <button onClick={() => setSelected('skills')} style={{ ...buttonStyle, flex: '1 1 30%' }}>Skills</button>
-            <button onClick={() => setSelected('resume')} style={{ ...buttonStyle, flex: '1 1 30%' }}>Resume</button>
-            <button onClick={() => setSelected('timeline')} style={{ ...buttonStyle, flex: '1 1 30%' }}>Experience Timeline</button>
-        </div>
-        <div style={{ textAlign: 'center', width: '90%'}}>
-            {content[selected]}
-        </div>
+      <div style={{ width: '90%', marginBottom: '20px', display: 'flex', justifyContent: 'space-between' }}>
+        {/* <button onClick={() => setSelected('skills')} style={{ ...buttonStyle, flex: '1 1 30%' }}>Skills</button> */}
+        <button onClick={() => { setSelected('resume'); window.location.reload(); }} style={{ ...buttonStyle, flex: '1 1 30%' }}>Resume</button>
+      {/* <button onClick={() => setSelected('timeline')} style={{ ...buttonStyle, flex: '1 1 30%' }}>Experience Timeline</button> */}
+      </div>
+      <div style={{ textAlign: 'center', width: '90%' }}>
+        {content[selected]}
+      </div>
     </div>
   );
 }
