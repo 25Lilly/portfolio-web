@@ -1,20 +1,20 @@
 import React from 'react';
 import Navbar from '../../Navbar';
 
-function ProjectOutline(props) {
+function ProjectOutline({ title, image, alt, description }) {
   return (
     <>
         <Navbar />
         <div className='projectOutline'>
-            <h1>{props.title}</h1>
+            <h1>{title}</h1>
             <div className='projectOutline__container'>
             <div className='projectOutline__wrapper'>
                 <ul className='projectOutline__items'>
                 <li>
-                    <img src={props.image} alt={props.alt} />
+                    <img src={image} alt={alt} />
                 </li>
                 <li>
-                    <p>{props.description}</p>
+                    <p>{description}</p>
                 </li>
                 </ul>
             </div>
