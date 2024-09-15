@@ -29,8 +29,6 @@ video {
   margin-right: 32px;
   color: #fff;
   font-size: 32px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
 }
 
 .first-btns {
@@ -43,13 +41,13 @@ video {
   margin: 6px;
   padding: 12px 32px;
   font-size: 40px;
+  transition: all 0.3s ease-out;
 }
 
 .first-btns .btn:hover {
   background-color: #0b35a7;
   color: #fff;
   transform: scale(1.2);
-  transition: all 0.3s ease-out;
 }
 
 @media screen and (max-width: 1020px) {

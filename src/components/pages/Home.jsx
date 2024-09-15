@@ -11,7 +11,7 @@ function Home() {
     <SeeFirst />
     <section id='myProjects'>
       <a href='#myProjects' className='anchor'> </a>
-      <h1 style={{ marginTop: '-80px', marginBottom: '55px', visibility:'hidden'}}>.</h1>
+      <h1 style={{ marginTop: '-80px', marginBottom: '49px', visibility:'hidden'}}>.</h1>
     </section>
     <Cards />
     </>

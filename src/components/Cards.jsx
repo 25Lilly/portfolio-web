@@ -16,7 +16,7 @@ function Cards() {
               path='/Projects/Morphy'
             />
             <CardItem
-              src='/images/projectImages/BPMCover.jpeg'
+              src='/images/projectImages/BPM/BPMCover.jpeg'
               text='Automatic Blood Pressure Cuff'
               label = 'Measuring blood pressure using korotkoff sounds and a pressure cuff'
               path='/Projects/BPM'

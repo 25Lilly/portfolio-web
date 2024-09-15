@@ -17,10 +17,26 @@ function SeeFirst() {
   }  
 
   useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'ArrowRight') {
+        setImageIndex(index => (index + 1) % images.length);
+      } else if (e.key === 'ArrowLeft') {
+        setImageIndex(index => (index - 1 + images.length) % images.length);
+      }
+    }
+
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    }
+  }, []);
+
+  useEffect(() => {
     const backgroundInterval = setInterval(() => {
       setWordIndex(randomInt(0, words.length));
       setImageIndex(index => (index + 1) % images.length);
-    }, 5000);
+    }, 4000);
 
     return () => {
       clearInterval(backgroundInterval);
