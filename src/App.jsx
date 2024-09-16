@@ -7,6 +7,7 @@ import About from './components/pages/About';
 import Projects from './components/pages/Projects';
 import Morphy from './components/pages/projects/Morphy';
 import ComingSoon from './components/pages/projects/ComingSoon';
+import DRC from './components/pages/projects/DRC';
 import ProjectPage from './components/pages/projects/ProjectPage';
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
@@ -32,6 +33,7 @@ const App = () => (
       <Route path="/Projects/EKG" element={<ComingSoon />} />
       <Route path="/Projects/PPG" element={<ComingSoon />} />
       <Route path="/Projects/BPM" element={<ComingSoon />} />
+      <Route path="/Projects/DRC" element={<DRC />} />
       <Route path="/Projects/ProjectPage" element={<ProjectPage />} />
       <Route path="/Projects/ComingSoon" element={<ComingSoon />} />
       <Route path="/About" element={<About />} />
