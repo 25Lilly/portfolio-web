@@ -10,6 +10,18 @@ function Cards() {
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
+              src={`${process.env.PUBLIC_URL}/images/projectImages/DRCCover.jpg`}
+              text='Duke Robotics Autonomous Underwater Vehicle'
+              label = 'A robot that navigates underwater and performs tasks autonomously'
+              path='/Projects/ComingSoon'
+            />
+            <CardItem
+              src={`${process.env.PUBLIC_URL}/images/projectImages/flipperCover.jpeg`}
+              text='Flipping Robot'
+              label = 'A dancing robot that can walk and do a flip'
+              path='/Projects/ComingSoon'
+            />
+            <CardItem
               src={`${process.env.PUBLIC_URL}/images/projectImages/morphyCover.png`}
               text='Automatic Shapeshifter'
               label = 'An autotransformable toy that changes shape at the push of a button'
@@ -21,8 +33,6 @@ function Cards() {
               label = 'Measuring blood pressure using korotkoff sounds and a pressure cuff'
               path='/Projects/BPM'
             />
-          </ul>
-          <ul className='cards__items'>
             <CardItem
               src= {`${process.env.PUBLIC_URL}/images/projectImages/PatientWatch.png`}
               text='Patient Watch' 
@@ -35,8 +45,6 @@ function Cards() {
               label = 'A low-cost device to warm IV fluids to body temperature to prevent hypothermia in surgical patients'
               path='/Projects/ComingSoon'
             />
-          </ul>
-          <ul className='cards__items'>
             <CardItem
               src={`${process.env.PUBLIC_URL}/images/projectImages/spotTheSpotCover.jpg`}
               text='Parking Spot Monitor'

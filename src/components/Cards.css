@@ -24,6 +24,9 @@
 }
 
 .cards__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
   margin-bottom: 24px;
 }
 
@@ -32,6 +35,8 @@
   flex: 1;
   margin: 0 1rem;
   border-radius: 10px;
+  flex: 1 1 30%;
+  box-sizing: border-box;
 }
 
 .cards__item__link {
@@ -83,7 +88,7 @@
   font-weight: 700;
   color: #fff;
   background-color: rgba(0, 83, 155, 0.7);
-  width: auto; 
+  width: 100%; 
   transition: ease-in-out 0.2s;
 }
 
