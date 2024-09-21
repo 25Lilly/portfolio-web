@@ -86,8 +86,22 @@ const OGSnakeGame = () => {
         }
     };
 
+    const handleTouch = (e) => {
+        const { clientX, clientY } = e;
+        if (clientX < maximum_x / 2 && direction.x === 0) {
+            setDirection({ x: -1, y: 0 }); // Left half
+        } else if (clientX > maximum_x / 2 && direction.x === 0) {
+            setDirection({ x: 1, y: 0 }); // Right half
+        } else if (clientY < maximum_y / 2 && direction.y === 0) {
+            setDirection({ x: 0, y: -1 }); // Top half
+        } else if (clientY > maximum_y / 2 && direction.y === 0) {
+            setDirection({ x: 0, y: 1 }); // Bottom half
+        }
+    };
+
   useEffect(() => {
     window.addEventListener('keydown', handleKeyDown);
+    window.addEventListener('click', handleTouch);
     const gameInterval = setInterval(moveSnake, 100);
     //add event listener for when window is resized
     window.addEventListener('resize', () => {
@@ -96,6 +110,7 @@ const OGSnakeGame = () => {
     });
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
+      window.removeEventListener('click', handleTouch);
       clearInterval(gameInterval);
     };
   }, [direction]);
