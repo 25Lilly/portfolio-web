@@ -45,7 +45,6 @@
 
 .games .cards__item {
   flex: 1 1 25%;
-  max-width: 30%;
 }
 
 .cards__item__link {
@@ -135,6 +134,10 @@
   .content__blog__container {
     width: 84%;
   }
+  .games .cards__item {
+    flex: 1 1 25%;
+    max-width: 30%;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -146,5 +149,9 @@
 @media only screen and (max-width: 1024px) {
   .cards__item {
     margin-bottom: 2rem;
+  }
+
+  .cards__item__text {
+    font-size: 24px;
   }
 }
