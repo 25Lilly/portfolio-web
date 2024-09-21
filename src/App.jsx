@@ -3,12 +3,18 @@ import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
-// import Games from './components/pages/Games';
+
+import Games from './components/pages/Games';
+import GameBox from './components/pages/games/GameBox';
+import OGSnake from './components/pages/games/OGSnake';
+import NDSnake from './components/pages/games/NDSnake';
+
 import Projects from './components/pages/Projects';
 import Morphy from './components/pages/projects/Morphy';
 import ComingSoon from './components/pages/projects/ComingSoon';
 import DRC from './components/pages/projects/DRC';
 import ProjectPage from './components/pages/projects/ProjectPage';
+
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 
@@ -27,7 +33,10 @@ const App = () => (
     <ScrollToTop />
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/Games" element={<ComingSoon />} />
+      <Route path="/Games" element={<Games />} />
+      <Route path="/Games/OGSnake" element={<GameBox title="Snake" game={<OGSnake />} />} />
+      <Route path="/Games/NDSnake" element={<GameBox title="Never Die Snake" game={<NDSnake />} />} />
+
       <Route path="/Projects" element={<Projects />} />
       <Route path="/Projects/Morphy" element={<Morphy />} />
       <Route path="/Projects/EKG" element={<ComingSoon />} />

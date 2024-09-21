@@ -1,11 +1,35 @@
 import React from 'react';
 import '../../App.css';
 import Navbar from '../Navbar';
+import CardItem from '../CardItem';
 
 function Games() {
   return (
     <>
     <Navbar />
+    <div className='games'>
+    <div className='cards'>
+      <h1>Games!</h1>
+      <div className='cards__container'>
+        <div className='cards__wrapper'>
+          <ul className='cards__items'>
+            <CardItem
+              src={`${process.env.PUBLIC_URL}/images/game_images/NDSnakeCover.png`}
+              text='Never Die Snake'
+              label = 'A game for everyone who is bad at snake'
+              path='/Games/NDSnake'
+            />
+            <CardItem
+              src={`${process.env.PUBLIC_URL}/images/game_images/OGSnakeCover.png`}
+              text='Snake'
+              label = 'Normal snake with wrap around'
+              path='/Games/OGSnake'
+            />
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
     </>
   );
 }

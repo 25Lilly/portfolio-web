@@ -28,6 +28,7 @@
   flex-wrap: wrap;
   gap: 24px;
   margin-bottom: 24px;
+  justify-content: center;
 }
 
 .cards__item {
@@ -35,8 +36,16 @@
   flex: 1;
   margin: 0 1rem;
   border-radius: 10px;
-  flex: 1 1 30%;
   box-sizing: border-box;
+}
+
+.projects .cards__item {
+  flex: 1 1 30%;
+}
+
+.games .cards__item {
+  flex: 1 1 25%;
+  max-width: 30%;
 }
 
 .cards__item__link {
