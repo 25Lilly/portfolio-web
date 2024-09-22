@@ -20,7 +20,7 @@ function Cards() {
               src={`${process.env.PUBLIC_URL}/images/card_images/flipperCover.jpeg`}
               text='Flipping Robot'
               label = 'A dancing robot that can walk and do a flip'
-              path='/Projects/ComingSoon'
+              path='https://youtu.be/Q_VxbgBJFBI'
             />
             <CardItem
               src={`${process.env.PUBLIC_URL}/images/card_images/morphyCover.png`}
