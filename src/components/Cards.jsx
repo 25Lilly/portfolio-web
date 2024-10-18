@@ -26,7 +26,7 @@ function Cards() {
               src={`${process.env.PUBLIC_URL}/images/card_images/morphyCover.png`}
               text='Automatic Shapeshifter'
               label = 'An autotransformable toy that changes shape at the push of a button'
-              path='/Projects/Morphy'
+              path='/Projects/ComingSoon'
             />
             <CardItem
               src={`${process.env.PUBLIC_URL}/images/card_images/dormDisplayCover.jpeg`}
