@@ -1,0 +1,66 @@
+.projectOutline__hero-section {
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 70vh;
+}
+
+.projectOutline__hero-section img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.projectOutline__hero-section .shadow-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    margin-left: -50%;
+    box-shadow: inset 0px -80px 80px 50px rgba(0, 0, 0, 0.5);
+}
+
+.projectOutline__hero-section h1 {
+    position: absolute;
+    top: 75%;
+    left: 27%;
+    right: 27%;
+    color: white;
+    font-size: 5rem;
+}
+
+.projectOutline__hero-section h2 {
+    position: absolute;
+    top: 85%;
+    left: 27%;
+    right: 27%;
+    color: white;
+    font-size: 2rem;
+}
+
+.projectOutline__overview {
+    padding: 2rem 2rem;
+    font-size: 1.5rem;
+}
+
+/* small screen size */
+@media screen and (max-width: 1020px) {
+    .projectOutline__hero-section h1 {
+        font-size: 3rem;
+    }
+
+    .projectOutline__hero-section h2 {
+        font-size: 1rem;
+    }
+
+    .projectOutline__hero-section .shadow-box {
+        box-shadow: inset 0px -80px 40px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .projectOutline__overview {
+        font-size: 1.25rem;
+    }
+}
+
+

@@ -14,7 +14,8 @@ function Cards() {
               src={`${process.env.PUBLIC_URL}/images/card_images/DRCCover.jpg`}
               text='Duke Robotics Autonomous Underwater Vehicle'
               label = 'A robot that navigates underwater and performs tasks autonomously'
-              path='/Projects/DRC'
+              // path='/Projects/DRC'
+              path = 'https://duke-robotics.com/'
             />
             <CardItem
               src={`${process.env.PUBLIC_URL}/images/card_images/flipperCover.jpeg`}
@@ -44,7 +45,7 @@ function Cards() {
               src= {`${process.env.PUBLIC_URL}/images/card_images/DukePCBCover.jpeg`}
               text='Duke D PCB'
               label = 'Custom PCB to teach incomming Duke ECE students how to solder'
-              path='/Projects/ComingSoon'
+              path='/Projects/PCB230'
             />
             <CardItem
               src= {`${process.env.PUBLIC_URL}/images/card_images/paitentWatchCover.png`}

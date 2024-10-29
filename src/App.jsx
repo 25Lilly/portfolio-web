@@ -10,10 +10,12 @@ import OGSnake from './components/pages/games/OGSnake';
 import NDSnake from './components/pages/games/NDSnake';
 
 import Projects from './components/pages/Projects';
-import Morphy from './components/pages/projects/Morphy';
 import ComingSoon from './components/pages/projects/ComingSoon';
-import DRC from './components/pages/projects/DRC';
 import ProjectPage from './components/pages/projects/ProjectPage';
+import PCB230 from './components/pages/projects/PCB230';
+import BPM from './components/pages/projects/BPM';
+// import DRC from './components/pages/projects/DRC';
+// import Morphy from './components/pages/projects/Morphy';
 
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
@@ -38,11 +40,12 @@ const App = () => (
       <Route path="/Games/NDSnake" element={<GameBox title="Never Die Snake" game={<NDSnake />} />} />
 
       <Route path="/Projects" element={<Projects />} />
-      <Route path="/Projects/Morphy" element={<Morphy />} />
+      <Route path="/Projects/Morphy" element={<ComingSoon />} />
       <Route path="/Projects/EKG" element={<ComingSoon />} />
       <Route path="/Projects/PPG" element={<ComingSoon />} />
-      <Route path="/Projects/BPM" element={<ComingSoon />} />
-      <Route path="/Projects/DRC" element={<DRC />} />
+      <Route path="/Projects/BPM" element={<BPM />} />
+      <Route path="/Projects/PCB230" element={<PCB230 />} />
+      {/* <Route path="/Projects/DRC" element={<DRC />} /> */}
       <Route path="/Projects/ProjectPage" element={<ProjectPage />} />
       <Route path="/Projects/ComingSoon" element={<ComingSoon />} />
 

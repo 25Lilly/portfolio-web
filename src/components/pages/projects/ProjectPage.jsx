@@ -6,9 +6,10 @@ function ProjectPage() {
       <>
         <ProjectOutline
             title = 'Project Title'
-            image = '/images/projectImages/placeholder.jpg'
-            alt = 'placeholder'
-            description = 'This is a placeholder description'
+            subtitle = 'Project Subtitle'
+            coverImage = {`${process.env.PUBLIC_URL}/images/projectImages/morphyCollection.png`}
+            overviewDescription='This is a placeholder overview description. should be <5 sentences'
+            // embeddedDocument= {`${process.env.PUBLIC_URL}/documents/resume.pdf`}
         />
       </>
     );
