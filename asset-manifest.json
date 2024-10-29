@@ -1,18 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio-web/static/css/main.ff579009.css",
-    "main.js": "/portfolio-web/static/js/main.93ed9b1f.js",
+    "main.css": "/portfolio-web/static/css/main.07896020.css",
+    "main.js": "/portfolio-web/static/js/main.e2187f43.js",
+    "static/media/transdecRobotLoading.jpg": "/portfolio-web/static/media/transdecRobotLoading.15947a7c8d3664e4aa7a.jpg",
     "static/media/robotPool.jpeg": "/portfolio-web/static/media/robotPool.f293c4704710cc3fe01b.jpeg",
     "static/media/ArobotThumbsUp.jpeg": "/portfolio-web/static/media/ArobotThumbsUp.e10b93121846ea229a1e.jpeg",
-    "static/media/morphySnake.png": "/portfolio-web/static/media/morphySnake.90266d9e738cca555a9f.png",
-    "static/media/morphyRemote.png": "/portfolio-web/static/media/morphyRemote.5928f052d9f5791666b1.png",
     "static/media/robotTableTest.jpeg": "/portfolio-web/static/media/robotTableTest.5d6c259d29e7b0026377.jpeg",
     "index.html": "/portfolio-web/index.html",
-    "main.ff579009.css.map": "/portfolio-web/static/css/main.ff579009.css.map",
-    "main.93ed9b1f.js.map": "/portfolio-web/static/js/main.93ed9b1f.js.map"
+    "main.07896020.css.map": "/portfolio-web/static/css/main.07896020.css.map",
+    "main.e2187f43.js.map": "/portfolio-web/static/js/main.e2187f43.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff579009.css",
-    "static/js/main.93ed9b1f.js"
+    "static/css/main.07896020.css",
+    "static/js/main.e2187f43.js"
   ]
 }
