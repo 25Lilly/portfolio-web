@@ -7,6 +7,8 @@ function BPM() {
         <ProjectOutline
             title = 'Automatic Blood Pressure Cuff'
             coverImage = {`${process.env.PUBLIC_URL}/images/projectImages/BPM/BPMSchematic.png`}
+            sections={['embeddedDocument']}
+            section_content={['']}
             embeddedDocument= {`${process.env.PUBLIC_URL}/documents/BPMpaper.pdf`}
         />
       </>

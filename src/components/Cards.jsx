@@ -11,6 +11,18 @@ function Cards() {
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
+              src={`${process.env.PUBLIC_URL}/images/card_images/checkersRobotCover.jpg`}
+              text='Autonomous Checkers Robot'
+              label = 'A robot that plays checkers against itself or a human opponent'
+              path='/Projects/Checkers'
+            />
+            <CardItem
+              src={`${process.env.PUBLIC_URL}/images/card_images/arabicDigitCover.png`}
+              text='Arabic Digit Recognizer'
+              label = 'Comparing different spoken Arabic digit recognizer models'
+              path='/Projects/GMM480'
+            />
+            <CardItem
               src={`${process.env.PUBLIC_URL}/images/card_images/DRCCover.jpg`}
               text='Duke Robotics Autonomous Underwater Vehicle'
               label = 'A robot that navigates underwater and performs tasks autonomously'
@@ -24,18 +36,6 @@ function Cards() {
               path='https://youtu.be/Q_VxbgBJFBI'
             />
             <CardItem
-              src={`${process.env.PUBLIC_URL}/images/card_images/morphyCover.png`}
-              text='Automatic Shapeshifter'
-              label = 'An autotransformable toy that changes shape at the push of a button'
-              path='/Projects/ComingSoon'
-            />
-            <CardItem
-              src={`${process.env.PUBLIC_URL}/images/card_images/dormDisplayCover.jpeg`}
-              text='Smart Dorm Display'
-              label = 'A custom LED display that connects to the internet'
-              path='/Projects/ComingSoon'
-            />
-            <CardItem
               src= {`${process.env.PUBLIC_URL}/images/card_images/BPMCover.jpeg`}
               text='Automatic Blood Pressure Cuff'
               label = 'Measuring blood pressure using korotkoff sounds and a pressure cuff'
@@ -46,6 +46,18 @@ function Cards() {
               text='Duke D PCB'
               label = 'Custom PCB to teach incomming Duke ECE students how to solder'
               path='/Projects/PCB230'
+            />
+            <CardItem
+              src={`${process.env.PUBLIC_URL}/images/card_images/morphyCover.png`}
+              text='Automatic Shapeshifter'
+              label = 'An autotransformable toy that changes shape at the push of a button'
+              path='/Projects/ComingSoon'
+            />
+            <CardItem
+              src={`${process.env.PUBLIC_URL}/images/card_images/dormDisplayCover.jpeg`}
+              text='Smart Dorm Display'
+              label = 'A custom LED display that connects to the internet'
+              path='/Projects/ComingSoon'
             />
             <CardItem
               src= {`${process.env.PUBLIC_URL}/images/card_images/paitentWatchCover.png`}

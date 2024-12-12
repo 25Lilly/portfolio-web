@@ -14,6 +14,8 @@ import ComingSoon from './components/pages/projects/ComingSoon';
 import ProjectPage from './components/pages/projects/ProjectPage';
 import PCB230 from './components/pages/projects/PCB230';
 import BPM from './components/pages/projects/BPM';
+import GMM480 from './components/pages/projects/GMM480';
+import Checkers from './components/pages/projects/Checkers';
 // import DRC from './components/pages/projects/DRC';
 // import Morphy from './components/pages/projects/Morphy';
 
@@ -45,6 +47,8 @@ const App = () => (
       <Route path="/Projects/PPG" element={<ComingSoon />} />
       <Route path="/Projects/BPM" element={<BPM />} />
       <Route path="/Projects/PCB230" element={<PCB230 />} />
+      <Route path="/Projects/GMM480" element={<GMM480 />} />
+      <Route path="/Projects/Checkers" element={<Checkers />} />
       {/* <Route path="/Projects/DRC" element={<DRC />} /> */}
       <Route path="/Projects/ProjectPage" element={<ProjectPage />} />
       <Route path="/Projects/ComingSoon" element={<ComingSoon />} />
