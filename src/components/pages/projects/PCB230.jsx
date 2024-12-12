@@ -2,7 +2,7 @@ import React from 'react';
 import ProjectOutline from './ProjectOutline';
 
 const soldered_pcb_text = ['Every student in the class was given a PCB to solder and the required components. Three students\' PCBs are shown below.',
-  `${process.env.PUBLIC_URL}/images/projectImages/PCB230/MultipleSolderedPCBs.jpg`,
+  `${process.env.PUBLIC_URL}/images/projectImages/PCB230/multipleSolderedPCBs.jpg`,
 ];
 
 function PCB230() {

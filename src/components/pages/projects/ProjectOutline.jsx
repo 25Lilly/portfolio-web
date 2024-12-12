@@ -3,29 +3,20 @@ import '../../../App.css';
 import Navbar from '../../Navbar';
 import './ProjectOutline.css';
 
-const video = `${process.env.PUBLIC_URL}/images/projectImages/checkersRobot/RobotPlayingSelf.mp4`
-
 function generateSections(sections, section_content, embeddedDocument) {
     let sectionList = [];
     for (let i = 0; i < sections.length; i++) {
         let content = []
         for (let j = 0; j < section_content[i].length; j++) {
-            if (section_content[i][j].includes('png') || section_content[i][j].includes('jpg') || section_content[i][j].includes('jpeg') || section_content[i][j].includes('JPG')) {
+            if (section_content[i][j].includes('png') || section_content[i][j].includes('jpg') || section_content[i][j].includes('jpeg')) {
                 content.push(
                     <div className='projectOutline__image'>
-                        <img src={section_content[i][j]} alt='display' />
+                        <img src={section_content[i][j]} alt={section_content[i][j]} />
                     </div>
                 );
-            } else if  (section_content[i][j].includes('mp4')) {
-                // <video src={section_content[i][j]} autoPlay loop muted />
+            } else if  (section_content[i][j].includes('mp4') || section_content[i][j].includes('.mov')) {
                 content.push(
-                    <>
-                    <video src={section_content[i][j]} autoPlay loop muted />
-                    <div className='projectOutline__text'>
-                        <p>Help pls</p>
-                        <p>{section_content[i][j]}</p>
-                    </div>
-                    </>
+                    <video className='projectOutline__video' src={section_content[i][j]} autoPlay loop muted />
                 );
             } 
             else if (section_content[i][j].includes('Figure')) {
