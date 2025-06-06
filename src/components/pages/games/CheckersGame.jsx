@@ -47,13 +47,15 @@ const CheckersGame = () => {
                     }
 
                     setBoard(newBoard);
-                    setSelectedPiece(null);
 
                     // Switch player
                     if (!moveStatus[1]) {
                         setCurrentPlayer(currentPlayer === 'red' ? 'black' : 'red');
+                        setSelectedPiece(null);
+                    } else {
+                        // If the move is valid and allows for another jump, keep the piece selected
+                        setSelectedPiece([row, col]);
                     }
-
                 } else {
                     // If the move is invalid, deselect the piece
                     setSelectedPiece(null);
@@ -98,7 +100,6 @@ const CheckersGame = () => {
                 board[midRow][midCol] = null; // Capture the piece
                 //check for double jump
                 if (checkAvailableJumps(toRow, toCol, fromRow, fromCol)) {
-                    const x = board[8][midCol]
                     return [true,true]; // Valid capture move with potential for another jump
                 }
                 return [true,false]; // Valid capture move with no further jumps
@@ -110,17 +111,16 @@ const CheckersGame = () => {
     const checkAvailableJumps = (row, col, pieceRow, pieceCol) => {
         // Check if there are any available jumps for the selected piece
         const piece = board[pieceRow][pieceCol];
-        const directions = piece.isKing ? [-1, 1] : [piece.color === 'red' ? -1 : 1];
+        const directions = (piece.isKing || row === 0 || row === 7) ? [-2, 2] : [piece.color === 'red' ? -2 : 2];
         for (let direction of directions) {
             const potentialJumps = [
-                { row: row + direction, col: col + 1 },
-                { row: row + direction, col: col - 1 },
+                { row: row + direction, col: col + 2 },
+                { row: row + direction, col: col - 2 },
             ];
             for (let { row: newRow, col: newCol } of potentialJumps) {
                 if (newRow >= 0 && newRow < 8 && newCol >= 0 && newCol < 8) {
-                    const midRow = Math.floor((row + newRow) / 2);
-                    const midCol = Math.floor((col + newCol) / 2);
-                    console.log(midRow, midCol);
+                    const midRow = (row + newRow) / 2;
+                    const midCol = (col + newCol) / 2;
                     if (!(midRow < 1 || midRow > 7)) {
                         const midPiece = board[midRow][midCol];
                         if (!(midPiece === null) && midPiece.color !== piece.color && board[newRow][newCol] === null) {
