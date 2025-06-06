@@ -8,6 +8,7 @@ import Games from './components/pages/Games';
 import GameBox from './components/pages/games/GameBox';
 import OGSnake from './components/pages/games/OGSnake';
 import NDSnake from './components/pages/games/NDSnake';
+import CheckersGame from './components/pages/games/CheckersGame';
 
 import Projects from './components/pages/Projects';
 import ComingSoon from './components/pages/projects/ComingSoon';
@@ -40,6 +41,7 @@ const App = () => (
       <Route path="/Games" element={<Games />} />
       <Route path="/Games/OGSnake" element={<GameBox title="Snake" game={<OGSnake />} />} />
       <Route path="/Games/NDSnake" element={<GameBox title="Never Die Snake" game={<NDSnake />} />} />
+      <Route path="/Games/Checkers" element={<GameBox title="Checkers" game={<CheckersGame />} />} />
 
       <Route path="/Projects" element={<Projects />} />
       <Route path="/Projects/Morphy" element={<ComingSoon />} />
