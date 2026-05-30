@@ -22,14 +22,14 @@ function About() {
             <p>
               My interests have led me to explore a variety of different technologies and fields as I grow my skillset as an engineer. 
               My journey includes a diverse <Link to="/Projects">portfolio of projects</Link> that continually enhance my skills and knowledge. 
-              From developing a <Link to="/Projects/Morphy">shapeshifting toy</Link> to creating <Link to="/Projects">this very website</Link>, 
+              From developing a <Link to="/Projects/Morphy">shapeshifting toy</Link> to creating an <Link to="/Projects/Checkers">autonomous checkers robot</Link>, 
               each project offers unique learning opportunities and excitement. I thrive on the challenge of mastering new technologies and 
               the satisfaction of seeing my creations come to life.
             </p>
           </div>
         </div>
       </div>
-      <AboutMeElements />
+      {/* <AboutMeElements /> */}
     </>
   );
 }

@@ -54,7 +54,7 @@ const references_text = ['[1] W. Han et al., "An efficient MFCC extraction metho
 ];
 const collaboration_text = [
   'This project was completed as a part of the ECE480 course on Machine Learning at Duke University. The project was completed in Python using the NumPy, Matplotlib, and Scikit-learn libraries. The project was completed over the course of a month, with the majority of the work being done in the last week of the project. Code was completed in a Jupyter Notebook environment, with the final code being exported to a Python script for submission.',
-  'When I had difficulties with python syntax in this project, I asked friends (Specifically Ethan Horowitz and Michael Bryant) who were working or had worked on similar things for help. I also advised Ethan on his visualization and compared accuracies with both of them. The biggest difficulty I encountered was when I attempted to model beyond a single digit with a different setup than presented here. To solve this difficulty, I decided to start over and redo the data setup to be more focused on combined cepstral coefficients for the digits rather than singular digit utterances themselves.',
+  'The biggest difficulty I encountered was when I attempted to model beyond a single digit with a different setup than presented here. To solve this difficulty, I decided to start over and redo the data setup to be more focused on combined cepstral coefficients for the digits rather than singular digit utterances themselves.',
   'The jupyter notebook for this project can be found below.'
 ];
 
@@ -75,7 +75,7 @@ function GMM480() {
               'Results',
               'Conclusion',
               'References',
-              'Collaboration',
+              'Project Implementation',
               'embeddedDocument'
             ]}
             section_content={[

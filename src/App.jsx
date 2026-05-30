@@ -18,7 +18,7 @@ import BPM from './components/pages/projects/BPM';
 import GMM480 from './components/pages/projects/GMM480';
 import Checkers from './components/pages/projects/Checkers';
 // import DRC from './components/pages/projects/DRC';
-// import Morphy from './components/pages/projects/Morphy';
+import Morphy from './components/pages/projects/Morphy';
 
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
@@ -44,7 +44,7 @@ const App = () => (
       <Route path="/Games/Checkers" element={<GameBox title="Checkers" game={<CheckersGame />} />} />
 
       <Route path="/Projects" element={<Projects />} />
-      <Route path="/Projects/Morphy" element={<ComingSoon />} />
+      <Route path="/Projects/Morphy" element={<Morphy />} />
       <Route path="/Projects/EKG" element={<ComingSoon />} />
       <Route path="/Projects/PPG" element={<ComingSoon />} />
       <Route path="/Projects/BPM" element={<BPM />} />
